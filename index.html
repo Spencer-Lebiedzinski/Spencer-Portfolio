@@ -3,184 +3,190 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Spencer Lebiedzinski - Software Developer Portfolio showcasing projects and experience" />
-  <title>Spencer Lebiedzinski - Software Developer</title>
+  <meta
+    name="description"
+    content="Spencer Lebiedzinski portfolio featuring software, AI, systems, and web projects."
+  />
+  <title>Spencer Lebiedzinski | Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- ============================================
-       NAVIGATION BAR
-       - Sticky header with smooth navigation
-       - Theme toggle button
-       ============================================ -->
-  <nav class="navbar">
-    <div class="nav-container">
-      <div class="nav-brand">Spencer</div>
-      <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
-    </div>
-  </nav>
-
-  <!-- ============================================
-       HERO SECTION
-       - Eye-catching gradient background
-       - Main headline and call-to-action
-       - Scroll indicator animation
-       ============================================ -->
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">Spencer Lebiedzinski</h1>
-      <p class="hero-subtitle">Computer Science Student & Software Developer</p>
-      <p class="hero-description">Crafting elegant solutions through code and design</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">View My Work</a>
-        <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#home" class="brand">Spencer Lebiedzinski</a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="siteNav"
+          aria-label="Open navigation"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Primary">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+          <a href="https://github.com/Spencer-Lebiedzinski" class="nav-link nav-link-external" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
       </div>
-    </div>
-    <!-- Animated scroll indicator -->
-    <div class="scroll-indicator">
-      <span></span>
-    </div>
-  </header>
+    </header>
 
-  <!-- ============================================
-       ABOUT SECTION
-       - Brief professional summary
-       - Skills showcase (customize as needed)
-       ============================================ -->
-  <section id="about" class="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <div class="about-content">
-        <div class="about-text">
-          <p>I'm a passionate Computer Science student with a focus on building scalable, user-centric software solutions. With experience in full-stack development, database design, and UI/UX principles, I combine technical expertise with creative problem-solving.</p>
-          <p>I'm particularly interested in creating applications that make a real impact, whether through elegant desktop applications or efficient backend systems.</p>
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Software developer portfolio</p>
+            <h1>
+              Building useful software with a calm interface and a practical
+              engineering mindset.
+            </h1>
+            <p class="hero-text">
+              I am Spencer Lebiedzinski, a computer science student interested
+              in building strong web experiences, exploring data science, and
+              creating software that connects technical work with finance and
+              analytics.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="button button-dark">Explore projects</a>
+              <a href="mailto:spencer.lebiedzinski@gmail.com" class="button button-light">Email Spencer</a>
+            </div>
+          </div>
+          <aside class="hero-panel reveal" aria-label="Highlights">
+            <div class="hero-panel-card">
+              <p class="panel-label">At a glance</p>
+              <ul class="stat-list">
+                <li><span>9</span> public repositories showcased</li>
+                <li><span>3</span> core interests: web, data, finance</li>
+                <li><span>1</span> goal: build useful products with clarity</li>
+              </ul>
+            </div>
+            <div class="hero-panel-card hero-panel-muted">
+              <p class="panel-label">Current emphasis</p>
+              <p>
+                Building polished sites, exploring data-driven products, and
+                working on projects that connect software engineering with
+                finance and analytics.
+              </p>
+            </div>
+          </aside>
         </div>
-        <!-- Skills grid - easily customizable -->
-        <div class="skills-grid">
-          <div class="skill-tag">Java</div>
-          <div class="skill-tag">Python</div>
-          <div class="skill-tag">SQL</div>
-          <div class="skill-tag">JavaScript</div>
-          <div class="skill-tag">UI/UX Design</div>
-          <div class="skill-tag">Database Design</div>
+      </section>
+
+      <section id="about" class="section section-muted">
+        <div class="container section-grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>Web development grounded in data science and finance curiosity.</h2>
+          </div>
+          <div class="section-body reveal">
+            <p>
+              I enjoy building clean, useful sites and applications, especially
+              when they involve data, analytics, or finance. My projects span
+              web development, Python-based dashboards, desktop software, and
+              technical experiments that strengthen how I think about product,
+              modeling, and decision-making.
+            </p>
+            <div class="skill-cloud" aria-label="Skills">
+              <span>Java</span>
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>HTML/CSS</span>
+              <span>Data Science</span>
+              <span>Finance</span>
+              <span>Flask</span>
+              <span>SQL</span>
+              <span>C</span>
+              <span>Analytics</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <!-- ============================================
-       PROJECTS SECTION
-       - Dynamic project grid with cards
-       - Hover effects and transitions
-       - Add/remove projects easily
-       ============================================ -->
-  <section id="projects" class="projects">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="projects-grid">
-
-        <!-- PROJECT CARD 1 -->
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Course Scheduler</h3>
-            <div class="project-badges">
-              <span class="badge badge-java">Java</span>
-              <span class="badge badge-db">Derby</span>
-              <span class="badge badge-ui">Swing</span>
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="projects-header reveal">
+            <div>
+              <p class="eyebrow">Projects</p>
+              <h2>Projects across web development, data, and finance.</h2>
             </div>
+            <p class="projects-summary">
+              A selection of work spanning software engineering, site building,
+              predictive tools, and finance-focused experimentation.
+            </p>
           </div>
-          <p class="project-description">A comprehensive desktop application for managing college courses with an intuitive interface. Features include schedule optimization, conflict detection, and course filtering.</p>
-          <div class="project-tech">
-            <span>Desktop App</span>
-            <span>Database</span>
-            <span>GUI</span>
-          </div>
-          <a href="https://github.com/Spencer-Lebiedzinski/Course-Scheduler-App" class="project-link">
-            View on GitHub
-            <span class="link-arrow">→</span>
-          </a>
-        </article>
 
-        <!-- PROJECT CARD 2 -->
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Aurora Journal</h3>
-            <div class="project-badges">
-              <span class="badge badge-cli">Flask</span>
-              <span class="badge badge-finance">Python</span>
-            </div>
+          <div class="project-toolbar reveal" aria-label="Project filters">
+            <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+            <button class="filter-chip" type="button" data-filter="AI">AI</button>
+            <button class="filter-chip" type="button" data-filter="Web">Web</button>
+            <button class="filter-chip" type="button" data-filter="Systems">Systems</button>
+            <button class="filter-chip" type="button" data-filter="Desktop">Desktop</button>
           </div>
-          <p class="project-description">an AI-driven journaling web app that analyzes users’ daily entries to provide personalized sentiment insights, emotional trend tracking, and reflective prompts.</p>
-          <div class="project-tech">
-            <span>REST APIs</span>
-            <span>Git</span>
-            <span>Data Tracking</span>
-          </div>
-          <a href="https://github.com/Spencer-Lebiedzinski/Aurora-Journal" class="project-link">
-            View on GitHub
-            <span class="link-arrow">→</span>
-          </a>
-        </article>
 
-        <!-- PROJECT CARD 3 - Template for adding more projects -->
-        <!-- Uncomment and customize to add more projects
-        <article class="project-card">
-          <div class="project-header">
-            <h3 class="project-title">Your Project Title</h3>
-            <div class="project-badges">
-              <span class="badge">Tech Stack</span>
-            </div>
-          </div>
-          <p class="project-description">Project description goes here.</p>
-          <div class="project-tech">
-            <span>Category 1</span>
-            <span>Category 2</span>
-          </div>
-          <a href="#" class="project-link">
-            View on GitHub
-            <span class="link-arrow">→</span>
-          </a>
-        </article>
-        -->
+          <div class="projects-grid" id="projectsGrid" aria-live="polite"></div>
+        </div>
+      </section>
 
+      <section class="section section-dark">
+        <div class="container proof-grid">
+          <div class="proof-card reveal">
+            <p class="eyebrow eyebrow-dark">Interests</p>
+            <h3>What I enjoy building</h3>
+            <ul class="proof-list">
+              <li>Web experiences that feel polished, usable, and intentional</li>
+              <li>Data projects that turn information into clearer decisions</li>
+              <li>Finance-focused tools, dashboards, and predictive workflows</li>
+              <li>Software that balances technical depth with product clarity</li>
+            </ul>
+          </div>
+          <div class="proof-card reveal">
+            <p class="eyebrow eyebrow-dark">Approach</p>
+            <h3>How I like to work</h3>
+            <ul class="proof-list">
+              <li>Start with a clear problem and build toward a useful outcome</li>
+              <li>Focus on clean structure, readability, and thoughtful UI details</li>
+              <li>Use data and experimentation to guide product decisions</li>
+              <li>Keep learning through projects in software, analytics, and finance</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact-panel reveal">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Interested in collaborating or talking through a project?</h2>
+            <p>
+              I am open to internships, software engineering opportunities, and
+              conversations about product, AI, and practical development work.
+            </p>
+          </div>
+          <div class="contact-actions">
+            <a href="mailto:spencer.lebiedzinski@gmail.com" class="button button-dark">Send email</a>
+            <a href="https://www.linkedin.com/in/spencermlebiedzinski" class="button button-light" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/Spencer-Lebiedzinski" class="button button-light" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Spencer Lebiedzinski</p>
+        <p id="footerYear"></p>
       </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       CONTACT SECTION
-       - Call-to-action for visitors
-       - Social links and contact methods
-       ============================================ -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Let's Work Together</h2>
-      <p class="contact-subtitle">Have an interesting project or opportunity? I'd love to hear from you.</p>
-      <div class="contact-buttons">
-        <a href="mailto:spencer.lebiedzinski@gmail.com" class="btn btn-primary">Send Email</a>
-        <a href="https://www.linkedin.com/in/spencermlebiedzinski" class="btn btn-secondary">LinkedIn</a>
-        <a href="https://github.com/Spencer-Lebiedzinski" class="btn btn-secondary">GitHub</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       FOOTER
-       - Simple, clean footer
-       - Copyright and social links
-       ============================================ -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Spencer Lebiedzinski. All rights reserved.</p>
-      <p class="footer-note">Designed and built with care</p>
-    </div>
-  </footer>
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
